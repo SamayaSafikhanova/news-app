@@ -22,12 +22,15 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "useUnknownInCatchVariables": true,
-    
+
     // Modules Configuration
     "baseUrl": "./",
+    "paths": {
+      "@assets/*": ["public/assets/*"]
+    },
     "module": "ES2022",
     "moduleResolution": "node",
-    
+
     // Language and Environment Configuration
     "target": "ES2022",
     "jsx": "react",
