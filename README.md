@@ -1,5 +1,8 @@
 # afforai
-Please run following commands;
+
+React + Webpack + Ts 
+
+Please run the following commands;
 
 npm install
 
