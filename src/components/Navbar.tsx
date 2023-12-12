@@ -1,14 +1,11 @@
- 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-const Navbar = () =>  {
-    const [isMobile, setIsMobile] = useState(false);
-     const handleClick = () => { 
-       setIsMobile(!isMobile);
-     };
-
-     // Determine the dynamic class name based on the isActive state
-     const dynamicClass = isMobile ? "d-flex" : "d-none";
+const Navbar = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  const handleClick = () => {
+    setIsMobile(!isMobile);
+  };
+  const dynamicClass = isMobile ? "d-flex" : "d-none";
   return (
     <div>
       <nav className="py-0 py-md-4 px-md-5 flex-column navbar navbar-expand-md navbar-light fixed-top">
@@ -47,27 +44,22 @@ const Navbar = () =>  {
                 <span>Help Center</span>
               </Link>
             </div>
-            <div
-              className="d-flex flex-row justify-content-end align-items-center gap-2 navbar-nav"
-              // style="flex: 1 1 0%;"
-            >
+            <div className="d-flex flex-row justify-content-end align-items-center gap-2 navbar-nav">
               <button
                 type="button"
                 className=" new-btn gray px-2 px-md-3 btn btn-primary"
-                //   style="height: fit-content;"
               >
                 Log in
               </button>
               <button
                 type="button"
                 className="new-btn violet-fill px-2 px-md-3 btn btn-primary"
-                //   style="height: fit-content;"
               >
                 Try for free
               </button>
               <div
-               className="d-block d-md-none navigation-toggler"
-               onClick={handleClick}
+                className="d-block d-md-none navigation-toggler"
+                onClick={handleClick}
               >
                 <svg
                   stroke="currentColor"
@@ -77,7 +69,6 @@ const Navbar = () =>  {
                   height="1em"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
-                  // style="vertical-align: top;"
                 >
                   <path
                     fill="none"
@@ -90,38 +81,24 @@ const Navbar = () =>  {
               </div>
             </div>
           </div>
-          <div className={`justify-content-start align-items-start navbar-nav ${dynamicClass}` }>
+          <div
+            className={`justify-content-start align-items-start navbar-nav ${dynamicClass}`}
+          >
             <Link to="anotherpage" target="_blank" className="mx-2 nav-link">
-              <span
-              // style="color: rgb(17, 17, 17); font-style: normal; font-weight: 500; font-size: 14px;"
-              >
-                Affiliate
-              </span>
+              <span>Affiliate</span>
             </Link>
             <Link to="anotherpage" className="mx-2 nav-link">
-              <span
-              // style="color: rgb(17, 17, 17); font-style: normal; font-weight: 500; font-size: 14px;"
-              >
-                Pricing
-              </span>
+              <span>Pricing</span>
             </Link>
             <a
               href="/#testimonial"
               data-rr-ui-event-key="/#testimonial"
               className="mx-2 nav-link"
             >
-              <span
-              // style="color: rgb(17, 17, 17); font-style: normal; font-weight: 500; font-size: 14px;"
-              >
-                Testimonials
-              </span>
+              <span>Testimonials</span>
             </a>
             <Link to="anotherpage" className="mx-2 nav-link">
-              <span
-              // style="color: rgb(17, 17, 17); font-style: normal; font-weight: 500; font-size: 14px;"
-              >
-                Help Center
-              </span>
+              <span>Help Center</span>
             </Link>
           </div>
         </div>
