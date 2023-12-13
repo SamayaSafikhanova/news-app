@@ -1,5 +1,5 @@
 import React from "react";
-const Testimonial = () => {
+const Testimonial: React.FC = () => {
   const data = [
     {
       id: 1,

@@ -1,5 +1,5 @@
 import React from "react";
-const Documents = () => {
+const Documents: React.FC = () => {
   return (
     <div className="container-fluid">
       <div className="row">

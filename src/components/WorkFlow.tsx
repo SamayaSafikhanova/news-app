@@ -1,5 +1,5 @@
 import React from "react";
-const WorkFlow = () => {
+const WorkFlow: React.FC = () => {
   return (
     <div className="container-fluid workflow">
       <div className="row">

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-const Faq = () => {
+const Faq: React.FC = () => {
   const faqData = [
     {
       question: "Is Afforai free?",
@@ -30,9 +30,9 @@ const Faq = () => {
     },
   ];
 
-  const [expandedIndex, setExpandedIndex] = useState(null);
+  const [expandedIndex, setExpandedIndex] = useState<number|null>(null);
 
-  const toggleExpand = (index: any) => {
+  const toggleExpand = (index: number)=> {
     setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
   };
   return (

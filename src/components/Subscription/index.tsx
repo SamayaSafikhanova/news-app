@@ -2,12 +2,12 @@ import React from "react";
 import BgImg from "./BgImg";
 import Slider from "./Slider";
 import AppSumo from "./AppSumo";
-const Subscription = () => {
+const Subscription: React.FC = () => {
   return (
     <div className="py-4 container-fluid subscription">
       <div className="d-flex flex-column">
         <div className="d-flex flex-column align-items-center appsumo">
-           <AppSumo/>
+          <AppSumo />
           <div className="text-center subscip-header">
             Your second brain for maximizing productivity
           </div>
@@ -18,7 +18,7 @@ const Subscription = () => {
             and extract the key findings you need.
           </div>
 
-         <Slider/>
+          <Slider />
 
           <div className="d-flex flex-shrink-1 align-content-center flex-row gap-4">
             <button
@@ -33,7 +33,7 @@ const Subscription = () => {
           </div>
         </div>
 
-       <BgImg/>
+        <BgImg />
       </div>
     </div>
   );

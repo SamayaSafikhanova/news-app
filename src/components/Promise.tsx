@@ -1,6 +1,6 @@
 import React from "react";
 
-const Promise = () => {
+const Promise: React.FC = () => {
   return (
     <div className="container-fluid section">
       <div className="row">

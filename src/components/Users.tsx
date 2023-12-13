@@ -1,5 +1,5 @@
 import React from "react";
-const Users = () => {
+const Users: React.FC = () => {
   return (
     <div className="d-flex flex-column justify-content-center align-items-center users">
       <div className="text-center">

@@ -1,8 +1,4 @@
 import React from "react"; 
-const AnotherPage = () => (
-  <div>
-    Test
-  </div>
-);
+const AnotherPage: React.FC = () => <div>Test</div>;
 
 export default AnotherPage;
