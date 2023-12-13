@@ -7,5 +7,4 @@ npm start
 
 To build app
 npm run build
-
-https://samayasafikhanova.github.io/afforai/
+https://affor-ai.onrender.com/
