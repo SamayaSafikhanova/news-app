@@ -1,5 +1,5 @@
 {
-  "homepage": "https://samayasafikhanova.github.io/",
+  "author": "Samaya Safikhanova",
   "name": "news-app",
   "version": "1.0.0",
   "description": "",
@@ -7,12 +7,10 @@
   "scripts": {
     "dev": "webpack serve --open  --host 0.0.0.0",
     "tscheck": "tsc",
-    "build": "webpack --config webpack.config.js --mode production", 
+    "build": "webpack --config webpack.config.js --mode production",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "keywords": [],
-  "author": "Samaya Safikhanova",
   "devDependencies": {
     "@babel/core": "^7.19.0",
     "@babel/preset-env": "^7.19.0",
