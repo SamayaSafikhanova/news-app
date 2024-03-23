@@ -1,4 +1,4 @@
-#afforai
+#News-app
 
 To start the server please run following commands:
 

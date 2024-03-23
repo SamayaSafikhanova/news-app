@@ -1,12 +1,13 @@
+
 import React from "react";
-import { createRoot } from "react-dom/client";
+import ReactDOM from "react-dom/client";
 import App from "./App";
-import { HashRouter } from "react-router-dom";
-const rootElement = document.querySelector("#root");
-if (!rootElement) throw new Error("Failed to find the root element");
-const root = createRoot(rootElement);
+
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
 root.render(
-  <HashRouter>
+  <React.StrictMode>
     <App />
-  </HashRouter>
+  </React.StrictMode>
 );

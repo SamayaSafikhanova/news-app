@@ -1,15 +1,13 @@
-import React from "react";
-import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import AnotherPage from "./pages/AnotherPage";  
-import "App.css";
-const App : React.FC= () => (
-  <div>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="anotherpage" element={<AnotherPage />} /> 
-    </Routes>
-  </div>
-);
+import React from "react"; 
+import "./App.css";
+import NewsList  from "./components/NewsList";
+
+function App() {
+  return (
+    <div className="App">
+      <NewsList />
+    </div>
+  );
+}
 
 export default App;
